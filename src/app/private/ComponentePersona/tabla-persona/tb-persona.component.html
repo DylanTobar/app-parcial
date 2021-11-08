@@ -31,7 +31,7 @@
 
     <ng-container matColumnDef="direccion">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>Direccion</th>
-      <td mat-cell *matCellDef="let row">{{row.Direccion}}</td>
+      <td mat-cell *matCellDef="let row">{{row.direccion}}</td>
     </ng-container>
 
     <ng-container matColumnDef="acciones">
@@ -53,8 +53,8 @@
   <mat-paginator #paginator
       [length]="dataSource?.data?.length"
       [pageIndex]="0"
-      [pageSize]="10"
-      [pageSizeOptions]="[5, 10, 20]"
+      [pageSize]="20"
+      [pageSizeOptions]="[10, 20]"
       aria-label="Seleccionar Pagina">
   </mat-paginator>
 

@@ -32,10 +32,13 @@ import { RouterModule} from '@angular/router';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { MatSnackBarModule} from '@angular/material/snack-bar';
 import { LoginComponent } from './public/login/login.component';
-import { AsigEstudianteComponent } from './private/T_Asig_Estudiante/asig-estudiante/asig-estudiante.component';
-import { CursoComponent } from './private/T_Cursos/curso/curso.component';
-import { TbAsigEstudianteComponent } from './private/T_Asig_Estudiante/tb-asig-estudiante/tb-asig-estudiante.component';
-import { TbCursoComponent } from './private/T_Cursos/tb-curso/tb-curso.component';
+import { AsigEstudianteComponent } from './private/ComponenteAsigEstudiante/asig-estudiante/asig-estudiante.component';
+import { CursoComponent } from './private/ComponenteCursos/curso/curso.component';
+
+import { TbAsigEstudianteComponent } from './private/ComponenteAsigEstudiante/tablaasig-estudiante/tb-asig-estudiante.component';
+import { AsigDocenteComponent } from './private/ComponenteAsigDocente/asig-docente/asig-docente.component';
+import { TbAsigDocenteComponent } from './private/ComponenteAsigDocente/tablaasig-docente/tb-asig-docente.component';
+import { TbCursoComponent } from './private/ComponenteCursos/tb-curso/tb-curso.component';
 
 
 @NgModule({
@@ -54,6 +57,9 @@ import { TbCursoComponent } from './private/T_Cursos/tb-curso/tb-curso.component
     TbCursoComponent,
     AsigEstudianteComponent,
     TbAsigEstudianteComponent,
+    AsigDocenteComponent,
+    TbAsigDocenteComponent,
+
 
   ],
   imports: [
