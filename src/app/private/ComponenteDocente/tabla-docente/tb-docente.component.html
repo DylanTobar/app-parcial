@@ -1,11 +1,11 @@
-<div class="mat-elevation-z8">
-  <mat-toolbar>
-    <span>
-      Docentes
-    </span>
-    <div class = "example-spacer"></div>
+<div class="fondo">
+  <div class="container ">
+    <div class="row ">
+      <div class="col order-first mt-3 mb-5">
+        <mat-card class="card">
+     <h1>Docentes</h1>
     <button mat-flat-button color="primary" routerLink = "/adddocente"  >Agregar</button>
-  </mat-toolbar>
+
   <table mat-table class="full-width-table" matSort aria-label="Elements">s
 
 
@@ -47,4 +47,8 @@
       [pageSize]="10"
       [pageSizeOptions]="[5, 10, 20]">
     </mat-paginator>
+  </mat-card>
+</div>
+</div>
+</div>
 </div>
